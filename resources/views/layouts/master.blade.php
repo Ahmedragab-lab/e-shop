@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     @include('layouts.head')
+    @toastr_css
 </head>
 <body>
     <div class="wrapper">
@@ -25,5 +26,8 @@
         </div><!-- main content wrapper end-->
     </div>
     @include('layouts.script')
+
+    @toastr_js
+    @toastr_render
 </body>
 </html>

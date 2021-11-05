@@ -31,11 +31,11 @@
           </li>
           <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements1">
-              <div class="pull-left"><i class="fa fa-id-card-o"></i><span class="right-nav-text">{{ __('categories') }}</span></div>
+              <div class="pull-left"><i class="fa fa-id-card-o"></i><span class="right-nav-text">{{ __('component') }}</span></div>
               <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
             </a>
             <ul id="elements1" class="collapse" data-parent="#sidebarnav">
-              <li><a href="#">movies</a></li>
+              <li><a href="{{ route('cats.index') }}">categories</a></li>
               <li><a href="#">mp3</a></li>
               <li><a href="#">video</a></li>
             </ul>

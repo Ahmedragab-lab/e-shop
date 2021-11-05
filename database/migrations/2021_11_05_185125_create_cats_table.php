@@ -15,6 +15,15 @@ class CreateCatsTable extends Migration
     {
         Schema::create('cats', function (Blueprint $table) {
             $table->id();
+            $table->string('cat_name');
+            $table->string('slug');
+            $table->longtext('desc');
+            $table->tinyInteger('status')->default(0);
+            $table->tinyInteger('popular')->default(0);
+            $table->string('image');
+            $table->string('meta_title');
+            $table->string('meta_disc');
+            $table->string('meta_keywords');
             $table->timestamps();
         });
     }
