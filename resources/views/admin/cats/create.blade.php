@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
   @section('title')
-       dashboard
+  categories
   @stop
 @endsection
 {{-- start content  --}}
@@ -60,8 +60,12 @@
                     <label for="meta_keywords">meta_keywords</label>
                     <textarea name="meta_keywords" id=""  rows="3" class="form-control"></textarea>
                 </div>
-                <div class="col-md-12 mb-3">
-                    <input type="file"  name="image" class="form-control">
+                <div class="col-lg-6">
+                    <label>Add image :  <span style="color:rgb(199, 8, 8)">*</span></label>
+                    <input class="form-control img" name="image"  type="file">
+                </div>
+                <div class="col-lg-6">
+                    <img src="{{ asset('uploads/cat/default.jpg') }}" class="img-thumbnail img-preview" width="100" alt="">
                 </div>
                 <div class="col-md-12 mb-3">
                    <button type="submit" class="btn btn-primary">Save</button>
