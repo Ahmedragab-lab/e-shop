@@ -20,7 +20,7 @@ class CreateCatsTable extends Migration
             $table->longtext('desc');
             $table->tinyInteger('status')->default(0);
             $table->tinyInteger('popular')->default(0);
-            $table->string('image');
+            $table->string('image')->default('default.jpg');
             $table->string('meta_title');
             $table->string('meta_disc');
             $table->string('meta_keywords');

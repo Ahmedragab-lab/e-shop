@@ -36,7 +36,7 @@
             </a>
             <ul id="elements1" class="collapse" data-parent="#sidebarnav">
               <li><a href="{{ route('cats.index') }}">categories</a></li>
-              <li><a href="#">mp3</a></li>
+              <li><a href="{{ route('products.index') }}">Products</a></li>
               <li><a href="#">video</a></li>
             </ul>
           </li>

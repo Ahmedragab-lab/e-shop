@@ -21,6 +21,7 @@ Route::group(
            Route::resource('users',App\Http\Controllers\UserController::class);
            Route::resource('roles',App\Http\Controllers\RoleController::class);
            Route::resource('cats',Admin\CatController::class);
+           Route::resource('products',Admin\ProductController::class);
 
 
         });
